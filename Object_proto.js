@@ -27,3 +27,8 @@ console.log('Property\'s in person inherited form human Object', person.canEat);
 console.log('From toString method ', String(person));
 console.log('From valueOf method', 1 + person);
 
+// Creating new Object with existing object as proto
+
+let p1 = Object.assign({}, person);
+
+console.log(p1.age);
